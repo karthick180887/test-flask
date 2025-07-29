@@ -1,12 +1,12 @@
 pipeline{
-  agent any
+  agent AWS
   environment{
     VENV = 'venv'
   }
   stages{
     stage('Checkout git'){
       steps{
-        git branch: 'main', url: 'https://github.com/Parth2k3/test-flask'
+        git branch: 'main', url: 'https://github.com/karthick180887/test-flask'
       }
     }
     stage('set up the venv'){
