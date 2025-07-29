@@ -1,5 +1,5 @@
 pipeline{
-  agent AWS
+  agent any
   environment{
     VENV = 'venv'
   }
