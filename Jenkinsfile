@@ -1,5 +1,7 @@
 pipeline{
-  agent any
+  agent {
+        label 'node1' // Replace with your actual AWS node label
+    }
   environment{
     VENV = 'venv'
   }
